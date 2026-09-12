@@ -2804,6 +2804,356 @@ a:hover {
   overflow-wrap: break-word !important;
   word-break: normal !important;
 }
+/* =========================================================
+   PREMIUM LUXURY WHY CHOOSE US CARDS
+   ========================================================= */
+
+.why-choose-us {
+  background:
+    radial-gradient(
+      circle at 8% 10%,
+      rgba(198,161,91,.10),
+      transparent 28%
+    ),
+    linear-gradient(
+      180deg,
+      #fbf8f2 0%,
+      #f5f0e7 100%
+    ) !important;
+
+  padding: 90px 0 !important;
+}
+
+/* CONTAINER */
+.why-choose-us .container {
+  padding: 0 30px !important;
+}
+
+/* SECTION TITLE */
+.why-choose-us .chose-us {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: clamp(38px, 5vw, 58px) !important;
+  line-height: 1.05 !important;
+  text-align: center;
+  color: #101A2B !important;
+  margin-bottom: 12px !important;
+}
+
+.why-choose-us .chose-us::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 3px;
+  margin: 18px auto 0;
+
+  background: linear-gradient(
+    90deg,
+    #C6A15B,
+    #E4CB91,
+    #C6A15B
+  );
+
+  border-radius: 10px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.why-choose-us .service-card {
+  position: relative;
+  overflow: hidden;
+
+  padding: 28px 28px 30px !important;
+  min-height: 430px;
+
+  background: rgba(255,255,255,.97) !important;
+
+  border: 1px solid rgba(198,161,91,.22) !important;
+  border-radius: 22px !important;
+
+  box-shadow:
+    0 16px 45px rgba(16,26,43,.08) !important;
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease !important;
+}
+
+
+/* GOLD TOP LINE */
+
+.why-choose-us .service-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 28px;
+  right: 28px;
+  top: 0;
+
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #C6A15B,
+    #E5CF9B,
+    #C6A15B
+  );
+
+  border-radius: 0 0 8px 8px;
+}
+
+
+/* CARD HOVER */
+
+.why-choose-us .service-card:hover {
+  transform: translateY(-10px) !important;
+
+  border-color:
+    rgba(198,161,91,.48) !important;
+
+  box-shadow:
+    0 24px 55px rgba(16,26,43,.14) !important;
+}
+
+
+/* =========================================================
+   ICON AREA
+   ========================================================= */
+
+.why-choose-us .service-card > div:first-child {
+  height: 205px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 10px;
+
+  position: relative;
+}
+
+
+/* REMOVE OLD CARTOON IMAGES */
+
+.why-choose-us
+.service-card
+> div:first-child
+img {
+  display: none !important;
+}
+
+
+/* PREMIUM ROUND ICON */
+
+.why-choose-us
+.service-card
+> div:first-child::before {
+
+  width: 142px;
+  height: 142px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #C6A15B;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #fffdf8,
+      #f4ead5
+    );
+
+  border:
+    1px solid rgba(198,161,91,.42);
+
+  box-shadow:
+    0 15px 35px rgba(16,26,43,.10),
+    inset 0 0 0 10px rgba(255,255,255,.75);
+
+  font-family:
+    "Font Awesome 6 Free";
+
+  font-weight: 900;
+
+  font-size: 52px;
+}
+
+
+/* DRIVER ICON */
+
+.why-choose-us
+.col-md-4:nth-child(1)
+.service-card
+> div:first-child::before {
+
+  content: "\f508";
+}
+
+
+/* CAR ICON */
+
+.why-choose-us
+.col-md-4:nth-child(2)
+.service-card
+> div:first-child::before {
+
+  content: "\f1b9";
+}
+
+
+/* LICENSE ICON */
+
+.why-choose-us
+.col-md-4:nth-child(3)
+.service-card
+> div:first-child::before {
+
+  content: "\f2c2";
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.why-choose-us .service-card-bottom {
+  width: 100% !important;
+
+  margin-top: 0 !important;
+
+  text-align: left !important;
+}
+
+
+/* CARD TITLE */
+
+.why-choose-us .service-h5 {
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif !important;
+
+  font-size: 22px !important;
+
+  font-weight: 700 !important;
+
+  color: #101A2B !important;
+
+  margin:
+    0 0 12px !important;
+}
+
+
+/* CARD DESCRIPTION */
+
+.why-choose-us .service-p {
+
+  color: #6d6a64 !important;
+
+  font-size: 15px !important;
+
+  line-height: 1.75 !important;
+
+  margin: 0 !important;
+}
+
+
+/* =========================================================
+   SMALL GOLD ARROW
+   ========================================================= */
+
+.why-choose-us
+.service-card-bottom::after {
+
+  content: "→";
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  margin-top: 22px;
+
+  border-radius: 50%;
+
+  background: #101A2B;
+
+  color: #D9BD7A;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  transition: all .3s ease;
+}
+
+
+/* ARROW HOVER */
+
+.why-choose-us
+.service-card:hover
+.service-card-bottom::after {
+
+  background: #C6A15B;
+
+  color: #101A2B;
+
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .why-choose-us {
+    padding: 65px 0 !important;
+  }
+
+  .why-choose-us .service-card {
+
+    min-height: auto;
+
+    padding: 24px !important;
+  }
+
+  .why-choose-us
+  .service-card
+  > div:first-child {
+
+    height: 170px;
+  }
+
+  .why-choose-us
+  .service-card
+  > div:first-child::before {
+
+    width: 120px;
+    height: 120px;
+
+    font-size: 44px;
+  }
+
+  .why-choose-us .service-h5 {
+
+    font-size: 20px !important;
+  }
+}        
     </style>
 </head>
 
